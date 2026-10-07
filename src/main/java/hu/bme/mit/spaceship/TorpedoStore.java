@@ -32,6 +32,7 @@ public class TorpedoStore {
 
   public boolean fire(int numberOfTorpedos){
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
+      //Since i insantly throw the exception there is no reason to create a temporal exception object
       throw new IllegalArgumentException("numberOfTorpedos");
     }
 
